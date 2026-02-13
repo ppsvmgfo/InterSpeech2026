@@ -748,7 +748,7 @@
 <section>
     <h2>Ablation Study Results</h2>
     <p>
-        Tables 2-4 present ablation studies on feature combinations, obfuscation targets, and obfuscation strategies.
+        Tables 2-3 present ablation studies on feature combinations and obfuscation strategies.
     </p>
 
     <h3>Table 2. Ablation I: Disentangled Feature Combinations</h3>
@@ -791,42 +791,7 @@
         </table>
     </div>
 
-    <h3>Table 3. Ablation II: Obfuscation Target</h3>
-    <div class="results-table-wrapper">
-        <table class="results">
-            <thead>
-                <tr>
-                    <th>Obfuscation Target</th>
-                    <th>EER <span class="metric-arrow">↓</span></th>
-                    <th>WER <span class="metric-arrow">↑</span></th>
-                    <th>CER <span class="metric-arrow">↑</span></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="ours">
-                    <td><i>F</i><sub>pro</sub><sup>obf</sup> + <i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
-                    <td>2.40%</td>
-                    <td>98.89%</td>
-                    <td>80.40%</td>
-                </tr>
-                <tr>
-                    <td><i>F</i><sub>pro</sub> + <i>F</i><sub>aco</sub><sup>obf</sup> + <i>F</i><sub>tim</sub></td>
-                    <td>2.59%</td>
-                    <td>98.90%</td>
-                    <td>81.57%</td>
-                </tr>
-                <tr>
-                    <td><i>F</i><sub>pro</sub><sup>obf</sup> + <i>F</i><sub>aco</sub><sup>obf</sup> + <i>F</i><sub>tim</sub></td>
-                    <td>2.69%</td>
-                    <td>98.87%</td>
-                    <td>83.05%</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <p><i>F</i><sub>pro</sub><sup>obf</sup>, <i>F</i><sub>aco</sub><sup>obf</sup>: features transformed via LTP.</p>
-
-    <h3>Table 4. Ablation III: Obfuscation Strategy on <i>F</i><sub>pro</sub></h3>
+    <h3>Table 3. Ablation II: Obfuscation Strategy on <i>F</i><sub>pro</sub></h3>
     <div class="results-table-wrapper">
         <table class="results">
             <thead>
