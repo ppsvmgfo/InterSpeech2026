@@ -531,7 +531,6 @@
     <!-- 아키텍처 그림은 images/ 폴더에 넣으세요 -->
     <img class="architecture-img" src="image/Model_Architecture.png" alt="SB-CFM Architecture">
     <p class="img-caption">Figure 1. Overall architecture of the proposed SB-CFM model.</p>
-    <p class="img-caption">Schematic of the proposed privacy-preserving speaker verification framework. The system consists of four main stages: (1) disentangling speech into independent components (Fcon, Fpro, Ftim, Faco) via FAcodec, (2) obfuscating non-content features to mask linguistic traces, (3) extracting robust speaker embeddings using an ECAPA-TDNN backbone, and (4) reconstructing speech from the obfuscated features to evaluate security and privacy performance by assessing linguistic recoverability.</p>
 </section>
 
 <!-- ════════════ Results ════════════ -->
@@ -645,50 +644,6 @@
                     <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <h3>Audio Sample(Ours)</h3>
-    <div class="results-table-wrapper">
-        <table class="results safeear-sample">
-            <thead>
-                <tr>
-                    <th>Speaker</th>
-                    <th>ORIGINAL</th>
-                    <th>FULL-Recon</th>
-                    <th>No-Content</th>
-                    <th>No-Content(MG)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="speaker-label">male-clean</td>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/original.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
-                </tr>
-                <tr>
-                    <td class="speaker-label">male-noisy</td>
-                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/original.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
-                </tr>
-                <tr>
-                    <td class="speaker-label">female-clean</td>
-                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/original.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/no_content.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
-                </tr>
-                <tr>
-                    <td class="speaker-label">female-noisy</td>
-                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/original.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
-                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
                 </tr>
             </tbody>
         </table>
