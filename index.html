@@ -318,14 +318,23 @@
             margin: 0 auto;
         }
 
-        table.results.ablation-audio td:first-child {
+        table.results.ablation-audio th:nth-child(1),
+        table.results.ablation-audio td:nth-child(1) {
+            width: 28%;
             text-align: center;
-            width: 55%;
+            font-weight: 600;
         }
 
-        table.results.ablation-audio td:last-child {
+        table.results.ablation-audio th:nth-child(2),
+        table.results.ablation-audio td:nth-child(2) {
+            width: 32%;
+            text-align: center;
+        }
+
+        table.results.ablation-audio th:nth-child(3),
+        table.results.ablation-audio td:nth-child(3) {
+            width: 40%;
             text-align: left;
-            width: 45%;
             font-weight: 600;
         }
 
@@ -883,30 +892,36 @@
         <table class="results ablation-audio">
             <thead>
                 <tr>
+                    <th>DISENTANGLED FEATUER</th>
                     <th>Audio Sample</th>
-                    <th>Transformation</th>
+                    <th>Transcription</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/original.wav" type="audio/wav"></audio></td>
                     <td>ORIGINAL</td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td>He began a confused complaint against the wizard, who had vanished behind the curtain on the left.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
                     <td>FULL-RECON</td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td>He began a confused complaint against the wizard, who had vanished behind the curtain on the left.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
                     <td>NO-CONTENT</td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td>Because I'm a confused, confused, confused, confused, confused, confused, confused, confused.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/prosody_timbre.wav" type="audio/wav"></audio></td>
                     <td><i>F</i><sub>pro</sub> + <i>F</i><sub>tim</sub></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/prosody_timbre.wav" type="audio/wav"></audio></td>
+                    <td>Hahaha.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/detail_timbre.wav" type="audio/wav"></audio></td>
                     <td><i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/detail_timbre.wav" type="audio/wav"></audio></td>
+                    <td>Oh.</td>
                 </tr>
             </tbody>
         </table>
@@ -917,30 +932,36 @@
         <table class="results ablation-audio">
             <thead>
                 <tr>
+                    <th>DISENTANGLED FEATUER</th>
                     <th>Audio Sample</th>
-                    <th>Transformation</th>
+                    <th>Transcription</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/original.wav" type="audio/wav"></audio></td>
                     <td>ORIGINAL</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td>보일러 한 시간 작동되게 틀어줘.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
                     <td>FULL-RECON</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td>보일러 한 시간 작동되게 틀어줘.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
                     <td>NO-CONTENT</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td>오늘의 현실은 적극적에 틀어져 있다.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/prosody_timbre.wav" type="audio/wav"></audio></td>
                     <td><i>F</i><sub>pro</sub> + <i>F</i><sub>tim</sub></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/prosody_timbre.wav" type="audio/wav"></audio></td>
+                    <td>응.</td>
                 </tr>
                 <tr>
-                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/detail_timbre.wav" type="audio/wav"></audio></td>
                     <td><i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/detail_timbre.wav" type="audio/wav"></audio></td>
+                    <td>아.</td>
                 </tr>
             </tbody>
         </table>
