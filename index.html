@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy-Preserving Speaker Verification with Multi-Granularity Feature Obfuscation</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <style>
         :root {
             --color-bg: #eef3fb;
@@ -26,12 +27,16 @@
         }
 
         body {
-            font-family: 'Source Sans 3', 'Noto Sans KR', sans-serif;
+            font-family: 'Source Sans 3', sans-serif;
             background: var(--color-bg);
             color: var(--color-text);
             line-height: 1.7;
             font-size: 16px;
             -webkit-font-smoothing: antialiased;
+        }
+
+        :lang(ko) {
+            font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
         }
 
         body * {
@@ -732,7 +737,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-male/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">보일러 한 시간 작동되게 틀어줘.</td>
+                    <td class="transcription-cell" lang="ko">보일러 한 시간 작동되게 틀어줘.</td>
                 </tr>
                 <tr>
                     <td class="speaker-label">korean-male-noisy</td>
@@ -740,7 +745,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-male-noisy/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">앞 차량 비슷한 속도로 따라가.</td>
+                    <td class="transcription-cell" lang="ko">앞 차량 비슷한 속도로 따라가.</td>
                 </tr>
                 <tr>
                     <td class="speaker-label">korean-female-clean</td>
@@ -748,7 +753,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-female/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">오늘은 커피 안 마실 거야.</td>
+                    <td class="transcription-cell" lang="ko">오늘은 커피 안 마실 거야.</td>
                 </tr>
                 <tr>
                     <td class="speaker-label">korean-female-noisy</td>
@@ -756,7 +761,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-female-noisy/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">내가 최근에 간 곳 알려줘.</td>
+                    <td class="transcription-cell" lang="ko">내가 최근에 간 곳 알려줘.</td>
                 </tr>
             </tbody>
         </table>
@@ -813,7 +818,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">보일러 한 시간 작동되게 틀어줘.</td>
+                    <td class="transcription-cell" lang="ko">보일러 한 시간 작동되게 틀어줘.</td>
                 </tr>
                 <tr>
                     <td class="speaker-label">korean-male-noisy</td>
@@ -821,7 +826,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-male-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">앞 차량 비슷한 속도로 따라가.</td>
+                    <td class="transcription-cell" lang="ko">앞 차량 비슷한 속도로 따라가.</td>
                 </tr>
                 <tr>
                     <td class="speaker-label">korean-female-clean</td>
@@ -829,7 +834,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-female/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female/FAcodec/no_content.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">오늘은 커피 안 마실 거야.</td>
+                    <td class="transcription-cell" lang="ko">오늘은 커피 안 마실 거야.</td>
                 </tr>
                 <tr>
                     <td class="speaker-label">korean-female-noisy</td>
@@ -837,7 +842,7 @@
                     <td><audio controls preload="none"><source src="audio/Korean-female-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/Korean-female-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
-                    <td class="transcription-cell">내가 최근에 간 곳 알려줘.</td>
+                    <td class="transcription-cell" lang="ko">내가 최근에 간 곳 알려줘.</td>
                 </tr>
             </tbody>
         </table>
@@ -945,27 +950,27 @@
                 <tr>
                     <td>ORIGINAL</td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/original.wav" type="audio/wav"></audio></td>
-                    <td>보일러 한 시간 작동되게 틀어줘.</td>
+                    <td lang="ko">보일러 한 시간 작동되게 틀어줘.</td>
                 </tr>
                 <tr>
                     <td><i>F</i><sub>pro</sub> + <i>F</i><sub>con</sub> + <i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
-                    <td>보일러 한 시간 작동되게 틀어줘.</td>
+                    <td lang="ko">보일러 한 시간 작동되게 틀어줘.</td>
                 </tr>
                 <tr>
                     <td><i>F</i><sub>pro</sub> + <i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
-                    <td>오늘의 현실은 적극적에 틀어져 있다.</td>
+                    <td lang="ko">오늘의 현실은 적극적에 틀어져 있다.</td>
                 </tr>
                 <tr>
                     <td><i>F</i><sub>pro</sub> + <i>F</i><sub>tim</sub></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/prosody_timbre.wav" type="audio/wav"></audio></td>
-                    <td>응.</td>
+                    <td lang="ko">응.</td>
                 </tr>
                 <tr>
                     <td><i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
                     <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/detail_timbre.wav" type="audio/wav"></audio></td>
-                    <td>아.</td>
+                    <td lang="ko">아.</td>
                 </tr>
             </tbody>
         </table>
