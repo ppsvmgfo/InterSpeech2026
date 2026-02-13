@@ -269,6 +269,10 @@
             height: 32px;
         }
 
+        table.results.strategy-table td:first-child {
+            text-align: center;
+        }
+
         .metric-arrow {
             font-size: 0.75em;
             opacity: 0.6;
@@ -793,10 +797,16 @@
 
     <h3>Table 3. Ablation II: Obfuscation Strategy on <i>F</i><sub>pro</sub></h3>
     <div class="results-table-wrapper">
-        <table class="results">
+        <table class="results strategy-table">
             <thead>
                 <tr>
-                    <th>Obfuscation Strategy</th>
+                    <th colspan="3">OBFUSCATION STRATEGY</th>
+                    <th colspan="3">METRICS</th>
+                </tr>
+                <tr>
+                    <th>GTA</th>
+                    <th>LTA</th>
+                    <th>LTP</th>
                     <th>EER <span class="metric-arrow">↓</span></th>
                     <th>WER <span class="metric-arrow">↑</span></th>
                     <th>CER <span class="metric-arrow">↑</span></th>
@@ -804,43 +814,57 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><i>F</i><sub>pro</sub><sup>GTA</sup> + <i>F</i><sub>base</sub></td>
+                    <td>✓</td>
+                    <td>-</td>
+                    <td>-</td>
                     <td>2.98%</td>
                     <td>99.98%</td>
                     <td>99.46%</td>
                 </tr>
                 <tr>
-                    <td><i>F</i><sub>pro</sub><sup>LTA</sup> + <i>F</i><sub>base</sub></td>
+                    <td>-</td>
+                    <td>✓</td>
+                    <td>-</td>
                     <td>2.67%</td>
                     <td>99.00%</td>
                     <td>88.52%</td>
                 </tr>
                 <tr>
-                    <td><i>F</i><sub>pro</sub><sup>LTP</sup> + <i>F</i><sub>base</sub></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>✓</td>
                     <td>2.40%</td>
                     <td>98.89%</td>
                     <td>80.40%</td>
                 </tr>
                 <tr>
-                    <td><i>F</i><sub>pro</sub><sup>GTA+LTA</sup> + <i>F</i><sub>base</sub></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>-</td>
                     <td>-%</td>
                     <td>99.03%</td>
                     <td>90.51%</td>
                 </tr>
                 <tr>
-                    <td><i>F</i><sub>pro</sub><sup>GTA+LTP</sup> + <i>F</i><sub>base</sub></td>
+                    <td>✓</td>
+                    <td>-</td>
+                    <td>✓</td>
                     <td>-%</td>
                     <td>98.83%</td>
                     <td>85.37%</td>
                 </tr>
                 <tr>
-                    <td><i>F</i><sub>pro</sub><sup>LTA+LTP</sup> + <i>F</i><sub>base</sub></td>
+                    <td>-</td>
+                    <td>✓</td>
+                    <td>✓</td>
                     <td>-%</td>
                     <td>98.59%</td>
                     <td>85.88%</td>
                 </tr>
                 <tr class="ours">
-                    <td><i>F</i><sub>pro</sub><sup>GTA+LTA+LTP</sup> + <i>F</i><sub>base</sub></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
                     <td>-%</td>
                     <td>98.83%</td>
                     <td>89.60%</td>
@@ -848,7 +872,7 @@
             </tbody>
         </table>
     </div>
-    <p><i>F</i><sub>base</sub> = {<i>F</i><sub>aco</sub>, <i>F</i><sub>tim</sub>}.</p>
+    <p>✓ indicates the strategy is applied; - indicates not applied.</p>
 </section>
 
 
