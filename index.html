@@ -490,7 +490,7 @@
 
 <!-- ════════════ Header ════════════ -->
 <header class="header">
-    <div class="conference-badge">Interspeech 2026</div>
+    <div class="conference-badge">Submitted to INTERSPEECH 2026</div>
     <h1>Privacy-Preserving Speaker Verification with Multi-Granularity Feature Obfuscation</h1>
     <p class="authors">
         <!-- 저자 이름은 accept 후에 추가 -->
@@ -645,10 +645,110 @@
                     <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
                     <td><audio controls preload="none"><source src="audio/English-female-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
                 </tr>
+                <tr>
+                    <td class="speaker-label">korean-male-clean</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">korean-male-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">korean-female-clean</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">korean-female-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/SpeechTokenizer/1_original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/SpeechTokenizer/2_v1-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/SpeechTokenizer/5_v2-v8_reconstruction.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/SpeechTokenizer/6_v2-v8_shuffled_reconstruction.wav" type="audio/wav"></audio></td>
+                </tr>
             </tbody>
         </table>
     </div>
-    <p>Rows map to source sets: English-male, English-male-noisy, English-female, and English-female-noisy.</p>
+    <h3>Audio Sample(Ours)</h3>
+    <div class="results-table-wrapper">
+        <table class="results safeear-sample">
+            <thead>
+                <tr>
+                    <th>Speaker</th>
+                    <th>ORIGINAL</th>
+                    <th>FULL-Recon</th>
+                    <th>No-Content</th>
+                    <th>No-Content(MG)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="speaker-label">male-clean</td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">male-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-male-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">female-clean</td>
+                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">female-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/English-female-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">korean-male-clean</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">korean-male-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-male-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">korean-female-clean</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+                <tr>
+                    <td class="speaker-label">korean-female-noisy</td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td><audio controls preload="none"><source src="audio/Korean-female-noisy/FAcodec/GTA_LTA_LTP.wav" type="audio/wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>Rows map to source sets: English-male, English-male-noisy, English-female, English-female-noisy, Korean-male, Korean-male-noisy, Korean-female, and Korean-female-noisy.</p>
 </section>
 
 <section>
