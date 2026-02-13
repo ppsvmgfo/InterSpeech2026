@@ -312,6 +312,23 @@
             margin: 0 auto;
         }
 
+        table.results.ablation-audio {
+            width: 900px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        table.results.ablation-audio td:first-child {
+            text-align: center;
+            width: 55%;
+        }
+
+        table.results.ablation-audio td:last-child {
+            text-align: left;
+            width: 45%;
+            font-weight: 600;
+        }
+
         table.results.safeear-sample td.transcription-cell {
             text-align: left;
             font-family: 'Source Sans 3', sans-serif;
@@ -816,9 +833,9 @@
 </section>
 
 <section>
-    <h2>Ablation Study Results</h2>
+    <h2>Ablation Study 1</h2>
     <p>
-        Tables 2-3 present ablation studies on feature combinations and obfuscation strategies.
+        Table 2 reports ablation on disentangled feature combinations, followed by qualitative audio samples for English and Korean versions.
     </p>
 
     <h3>Table 2. Ablation I: Disentangled Feature Combinations</h3>
@@ -861,6 +878,80 @@
         </table>
     </div>
 
+    <h3>Audio Sample (English Ver.)</h3>
+    <div class="results-table-wrapper">
+        <table class="results ablation-audio">
+            <thead>
+                <tr>
+                    <th>Audio Sample</th>
+                    <th>Transformation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td>ORIGINAL</td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td>FULL-RECON</td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td>NO-CONTENT</td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/prosody_timbre.wav" type="audio/wav"></audio></td>
+                    <td><i>F</i><sub>pro</sub> + <i>F</i><sub>tim</sub></td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/English-male/FAcodec/detail_timbre.wav" type="audio/wav"></audio></td>
+                    <td><i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Audio Sample (Korean Ver.)</h3>
+    <div class="results-table-wrapper">
+        <table class="results ablation-audio">
+            <thead>
+                <tr>
+                    <th>Audio Sample</th>
+                    <th>Transformation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/original.wav" type="audio/wav"></audio></td>
+                    <td>ORIGINAL</td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/full_recon.wav" type="audio/wav"></audio></td>
+                    <td>FULL-RECON</td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/no_content.wav" type="audio/wav"></audio></td>
+                    <td>NO-CONTENT</td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/prosody_timbre.wav" type="audio/wav"></audio></td>
+                    <td><i>F</i><sub>pro</sub> + <i>F</i><sub>tim</sub></td>
+                </tr>
+                <tr>
+                    <td><audio controls preload="none"><source src="audio/Korean-male/FAcodec/detail_timbre.wav" type="audio/wav"></audio></td>
+                    <td><i>F</i><sub>aco</sub> + <i>F</i><sub>tim</sub></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section>
+    <h2>Ablation Study 2</h2>
+    <p>
+        Table 3 reports the impact of different obfuscation strategy combinations.
+    </p>
     <h3>Table 3. Ablation II: Obfuscation Strategy on <i>F</i><sub>pro</sub></h3>
     <div class="results-table-wrapper">
         <table class="results strategy-table table-3">
