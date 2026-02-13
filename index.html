@@ -364,6 +364,20 @@
             color: var(--color-accent);
         }
 
+        .scene-section.audio-sample-label {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 18px;
+            padding: 12px 24px;
+            text-align: center;
+        }
+
+        .scene-section.audio-sample-label span {
+            font-size: 1.22em;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
         /* ── Responsive Audio for each scene ── */
         .scene-audio-block {
             background: var(--color-surface);
@@ -537,7 +551,7 @@
 <section>
     <h2>Evaluation Results</h2>
     <p>
-        Table 1 reports the main comparison between SafeEar and our method. SafeEar Sample provides qualitative audio examples, while Tables 2-4 present ablation studies on feature combinations, obfuscation targets, and obfuscation strategies.
+        Table 1 reports the main comparison between SafeEar and our method. Audio Sample provides qualitative audio examples, while Tables 2-4 present ablation studies on feature combinations, obfuscation targets, and obfuscation strategies.
     </p>
 
     <h3>Table 1. Main Comparison (SafeEar vs. Ours)</h3>
@@ -604,8 +618,8 @@
         </table>
     </div>
 
-    <h3>SafeEar Sample</h3>
-    <div class="scene-section"><span>SafeEar Sample</span></div>
+    <h3>Audio Sample</h3>
+    <div class="scene-section audio-sample-label"><span>Audio Sample</span></div>
     <div class="results-table-wrapper">
         <table class="results safeear-sample">
             <thead>
